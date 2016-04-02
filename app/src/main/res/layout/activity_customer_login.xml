@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xyz.com.xyzresturent.CustomerLogin"
+
+    >
+
+
+    <TextView
+        android:id="@id/tvOrderTaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Order Taker :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@id/tvCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/tvOrderTaker"
+        android:layout_toRightOf="@id/tvOrderTaker"
+        android:text="Customer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvCustomerName"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/tvCustomerName"
+        android:layout_toRightOf="@id/tvCustomerName"
+        android:text="Time :"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextClock
+        android:id="@id/tvTextClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvTime"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/tvTime"
+        android:layout_toRightOf="@id/tvTime"/>
+
+    <TextView
+        android:id="@id/tvCovers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvOrderTaker"
+        android:layout_marginTop="23dp"
+        android:text="Covers"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:id="@id/edCovers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/tvTextClock"
+        android:layout_alignRight="@id/tvTextClock"
+        android:layout_below="@id/tvTextClock"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/tvCovers"
+        android:layout_toRightOf="@id/tvCovers"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <GridView
+        android:id="@id/gdTableView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/edCovers"
+        android:layout_marginTop="10dp"
+        android:numColumns="3"
+        />
+
+    <Button
+        android:id="@id/bnConformTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gdTableView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Conform Table"/>
+
+</RelativeLayout>

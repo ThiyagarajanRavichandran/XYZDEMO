@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--activity_main.xml-->
+    <item name="bnCustomer" type="id"/>
+    <item name="bnAdmin" type="id"/>
+    <!--activity_customer_login.xml-->
+    <item name="tvOrderTaker" type="id"/>
+    <item name="edCovers" type="id"/>
+    <item name="gdTableView" type="id"/>
+    <item name="bnConformTable" type="id"/>
+    <item name="tvCustomerName" type="id"/>
+    <item name="tvCovers" type="id"/>
+    <item name="tvTime" type="id"/>
+    <item name="tvTextClock" type="id"/>
+    <item name="ItemPrice" type="id" />
+</resources>

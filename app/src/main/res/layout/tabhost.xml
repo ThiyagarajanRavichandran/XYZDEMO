@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tvOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OrderId :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/OrderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvOrderId"
+        android:layout_toEndOf="@+id/tvOrderId"
+        android:layout_toRightOf="@+id/tvOrderId"
+        android:text="ORD0001"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvCoverId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_toEndOf="@+id/OrderNo"
+        android:layout_toRightOf="@+id/OrderNo"
+        android:text="Covers :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvCoverNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvCoverId"
+        android:layout_toRightOf="@+id/tvCoverId"
+        android:text="12"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvTableNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OrderNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Table No : 2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"/>
+
+
+
+    <Button
+        android:id="@+id/bnConformOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Conform Order"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Data"
+        android:id="@+id/bnClearData"
+        android:layout_below="@+id/tvTableNo"
+        android:layout_marginLeft="10dp"/>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bnClearData"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
